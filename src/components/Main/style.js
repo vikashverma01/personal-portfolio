@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   display: flex;
+  height: 90vh;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center; /* prevents awkward wide gaps */
+
+  justify-content: flex-start; /* ✅ shifts layout slightly right */
   gap: clamp(2rem, 4vw, 5rem);
 
-  padding: clamp(2rem, 5vw, 6rem) 5%;
-  min-height: 100vh;
+  padding: clamp(2rem, 5vw, 6rem) 8%; /* ✅ increased horizontal padding */
   box-sizing: border-box;
 
   .hero-text {
@@ -99,6 +100,7 @@ export const Container = styled.section`
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     text-align: center;
+    justify-content: center; /* ✅ prevents right shift on phones */
 
     .hero-text {
       .social-media {
@@ -114,7 +116,7 @@ export const Container = styled.section`
   /* ---------- Small Phones ---------- */
 
   @media (max-width: 480px) {
-    padding: 2.5rem 4%;
+    padding: 2.5rem 5%;
 
     .hero-image img {
       max-width: 280px;

@@ -153,7 +153,7 @@ function About() {
         <motion.img
           src={mypic}
           className="pic"
-          alt="vikash"
+          alt="Vikash Verma"
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -169,7 +169,7 @@ function About() {
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
         >
-          About me
+          About Me
         </motion.h2>
 
         <motion.p
@@ -190,10 +190,10 @@ function About() {
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
         >
-          <h3>Education:</h3>
+          <h3>Education</h3>
           <p>
-            Rungta College OF Engineering And Technology, Bhilai | July 2022 -
-            Aug 2026
+            Rungta College of Engineering and Technology, Bhilai <br />
+            July 2022 – Aug 2026
           </p>
         </motion.div>
 
@@ -203,7 +203,7 @@ function About() {
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
         >
-          Here are my main skills:
+          Main Skills
         </motion.h3>
 
         <div className="hard-skills">
@@ -231,7 +231,7 @@ function About() {
               transition={{ delay: index * 0.05, duration: 0.4 }}
               viewport={{ once: false, amount: 0.2 }}
             >
-              <img src={icon} alt={`skill-${index}`} />
+              <img src={icon} alt="skill icon" />
             </motion.div>
           ))}
         </div>
